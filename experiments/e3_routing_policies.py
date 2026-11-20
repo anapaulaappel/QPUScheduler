@@ -121,28 +121,44 @@ def evaluate(df):
     return pd.DataFrame(rows)
 
 
+LABELS = {"raw_best": "Highest raw fidelity", "lowest_cost": "Lowest cost",
+          "estimate_filter": "Estimate filter (ours)", "perqubit_filter": "Per-qubit estimate filter",
+          "calibrated_filter": "Calibrated estimate filter", "learned_filter": "Learned predictor filter",
+          "transpile_all": "Transpile every candidate", "oracle": "Oracle (true success)"}
+
+
 def plot(res, tag=""):
+    import matplotlib
+    matplotlib.use("Agg")
     import matplotlib.pyplot as plt
-    fig, axes = plt.subplots(1, 3, figsize=(16, 4.5))
-    for pol, d in res.groupby("policy"):
-        axes[0].plot(d.tau, d.sla_violations, "o-", label=pol)
-        axes[1].plot(d.tau, d.unschedulable, "o-", label=pol)
-    axes[0].set_title("SLA violations (ran below τ)")
-    axes[1].set_title("Unschedulable jobs")
+    plt.rcParams.update({"font.size": 12, "pdf.fonttype": 42})
+    order = [p for p in LABELS if p in set(res.policy)]
+    colors = dict(zip(order, plt.cm.tab10.colors))
+    fig, axes = plt.subplots(1, 3, figsize=(11, 4.6), layout="constrained")
+    for pol in order:
+        d = res[res.policy == pol].sort_values("tau")
+        kw = dict(color=colors[pol], marker="o", ms=4, lw=2.4 if pol == "estimate_filter" else 1.4,
+                  label=LABELS[pol])
+        axes[0].plot(d.tau, d.sla_violations, **kw)
+        axes[1].plot(d.tau, d.unschedulable, **kw)
+    axes[0].set_title("SLA violations")
+    axes[1].set_title("Jobs declared unschedulable")
     for ax in axes[:2]:
-        ax.set_xlabel("Required fidelity τ")
+        ax.set_xlabel("Required success probability τ")
         ax.set_ylabel(f"Jobs (of {int(res.jobs.iloc[0])})")
-    axes[0].legend(fontsize=7)
     lat = res[res.tau == res.tau.min()].set_index("policy").median_latency_ms
-    lat = lat[lat > 0]
-    axes[2].bar(range(len(lat)), lat.values, color="#4a9eed")
+    lat = lat[[p for p in order if p in lat.index and lat[p] > 0]]
+    axes[2].bar(range(len(lat)), lat.values, color=[colors[p] for p in lat.index])
     axes[2].set_xticks(range(len(lat)))
-    axes[2].set_xticklabels(lat.index, rotation=30, ha="right", fontsize=8)
+    axes[2].set_xticklabels([LABELS[p].replace(" (ours)", "*") for p in lat.index], rotation=35, ha="right", fontsize=10)
     axes[2].set_yscale("log")
-    axes[2].set_ylabel("Median scheduling latency per job (ms)")
-    axes[2].set_title("Scheduling latency (all candidates)")
-    plt.tight_layout()
-    plt.savefig(RESULTS / f"e3_policies{tag}.png", dpi=200)
+    axes[2].set_ylabel("Median latency per job (ms)")
+    axes[2].set_title("Decision latency")
+    for ax in axes:
+        ax.grid(alpha=0.3)
+    fig.legend(*axes[0].get_legend_handles_labels(), loc="outside lower center", ncol=4, fontsize=11, frameon=False)
+    fig.savefig(RESULTS / f"e3_policies{tag}.png", dpi=200)
+    fig.savefig(RESULTS / f"e3_policies{tag}.pdf")
 
 
 def calibrate_lofo(df, col="esp_estimated", q=0.9):

@@ -98,8 +98,8 @@ def main():
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
-    plt.rcParams.update({"font.size": 11})
-    fig, axes = plt.subplots(1, 3, figsize=(14, 4.2))
+    plt.rcParams.update({"font.size": 13, "pdf.fonttype": 42})
+    fig, axes = plt.subplots(1, 3, figsize=(10, 4.0), layout="constrained")
     label = {"raw_best": "Highest raw fidelity", "lowest_cost": "Lowest cost",
              "shortest_queue": "Shortest queue (quality-blind)", "estimate_greedy": "Estimate filter, best ESP",
              "estimate_queue": "Estimate filter, earliest completion (ours)",
@@ -110,13 +110,12 @@ def main():
         axes[2].plot(d.load, d.false_rejection_rate, "o-", ms=4, label=label[pol])
     for ax, t in zip(axes, ("SLA violations", "Waiting time", "False rejections")):
         ax.set_title(t); ax.grid(alpha=0.3)
-    axes[0].set_ylabel("SLA violation rate (jobs that ran)")
-    axes[1].set_ylabel("Mean waiting time (s)"); axes[1].set_yscale("log")
-    axes[2].set_ylabel("False-rejection rate")
+    axes[0].set_ylabel("Share of jobs that ran")
+    axes[1].set_ylabel("Mean wait (s)"); axes[1].set_yscale("log")
+    axes[2].set_ylabel("Share of all jobs")
     for ax in axes:
-        ax.set_xlabel("Offered load (relative to fastest-device capacity)")
-    fig.legend(*axes[0].get_legend_handles_labels(), loc="lower center", ncol=3, fontsize=9, frameon=False)
-    fig.tight_layout(rect=(0, 0.1, 1, 1))
+        ax.set_xlabel("Offered load")
+    fig.legend(*axes[0].get_legend_handles_labels(), loc="outside lower center", ncol=2, fontsize=11, frameon=False)
     fig.savefig(RESULTS / "fig_x1_contention.png", dpi=200)
     fig.savefig(RESULTS / "fig_x1_contention.pdf")
     pd.set_option("display.width", 200)

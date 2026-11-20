@@ -1,0 +1,4 @@
+# Separate venv for IQM Resonance runs (E7, E12): python -m venv .venv-iqm
+# Versions used for the paper (Nov 2026).
+iqm-client[qiskit]==36.0.0
+qiskit==2.1.2
