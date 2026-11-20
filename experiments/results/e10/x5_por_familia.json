@@ -1,0 +1,82 @@
+{
+ "ibm/concentrada": {
+  "n": 36,
+  "rho_estimate": 0.709,
+  "rho_transpiled": 0.743,
+  "mae_estimate": 0.134
+ },
+ "ibm/espalhada": {
+  "n": 21,
+  "rho_estimate": 0.545,
+  "rho_transpiled": 0.565,
+  "mae_estimate": 0.192
+ },
+ "ibm/familia/adder": {
+  "n": 6,
+  "rho_estimate": 0.943
+ },
+ "ibm/familia/bernstein_vazirani": {
+  "n": 12,
+  "rho_estimate": 0.371
+ },
+ "ibm/familia/ghz": {
+  "n": 12,
+  "rho_estimate": 0.916
+ },
+ "ibm/familia/grover": {
+  "n": 6,
+  "rho_estimate": 0.771
+ },
+ "ibm/familia/qaoa_3reg": {
+  "n": 6,
+  "rho_estimate": 0.6
+ },
+ "ibm/familia/qaoa_ring": {
+  "n": 6,
+  "rho_estimate": 0.486
+ },
+ "ibm/familia/vqe_hea": {
+  "n": 9,
+  "rho_estimate": 0.4
+ },
+ "todos/concentrada": {
+  "n": 58,
+  "rho_estimate": 0.656,
+  "rho_transpiled": 0.659,
+  "mae_estimate": 0.197
+ },
+ "todos/espalhada": {
+  "n": 35,
+  "rho_estimate": 0.071,
+  "rho_transpiled": 0.024,
+  "mae_estimate": 0.315
+ },
+ "todos/familia/adder": {
+  "n": 10,
+  "rho_estimate": 0.818
+ },
+ "todos/familia/bernstein_vazirani": {
+  "n": 19,
+  "rho_estimate": 0.242
+ },
+ "todos/familia/ghz": {
+  "n": 19,
+  "rho_estimate": 0.753
+ },
+ "todos/familia/grover": {
+  "n": 10,
+  "rho_estimate": 0.745
+ },
+ "todos/familia/qaoa_3reg": {
+  "n": 10,
+  "rho_estimate": -0.067
+ },
+ "todos/familia/qaoa_ring": {
+  "n": 10,
+  "rho_estimate": -0.178
+ },
+ "todos/familia/vqe_hea": {
+  "n": 15,
+  "rho_estimate": 0.111
+ }
+}

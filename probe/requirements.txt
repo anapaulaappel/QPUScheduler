@@ -1,0 +1,9 @@
+# Core
+pyyaml>=6.0
+
+# IBM Quantum (only needed for PROBE_MODE=real)
+qiskit>=1.0.0
+qiskit-ibm-runtime>=0.20.0
+
+# Simulator (always used in PROBE_MODE=simulator)
+qiskit-aer>=0.14.0

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Runs the read-only IBM calibration collector every 15 minutes (macOS launchd).
+  Install:   cp deploy/com.qsched.calibration-collector.plist ~/Library/LaunchAgents/
+             launchctl load ~/Library/LaunchAgents/com.qsched.calibration-collector.plist
+  Uninstall: launchctl unload ~/Library/LaunchAgents/com.qsched.calibration-collector.plist
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.qsched.calibration-collector</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/path/to/QPUScheduler/.venv/bin/python</string>
+    <string>/path/to/QPUScheduler/probe/collect_calibration.py</string>
+    <string>--once</string>
+  </array>
+  <key>StartInterval</key><integer>900</integer>
+  <key>RunAtLoad</key><true/>
+  <key>StandardOutPath</key><string>/tmp/qsched-collector.log</string>
+  <key>StandardErrorPath</key><string>/tmp/qsched-collector.err</string>
+</dict>
+</plist>

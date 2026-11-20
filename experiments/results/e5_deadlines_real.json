@@ -1,0 +1,60 @@
+{
+  "qubit_fidelity": {
+    "180": {
+      "jobs_needing_deferral": 25,
+      "run_now_sla_met_rate": 0.0,
+      "give_up_sla_met_rate": 0.0,
+      "defer_sla_met_rate": 0.0,
+      "oracle_sla_met_rate": 0.04,
+      "defer_median_wait_min_when_deferred": null,
+      "oracle_median_wait_min_when_waited": 5.0
+    },
+    "720": {
+      "jobs_needing_deferral": 15,
+      "run_now_sla_met_rate": 0.0,
+      "give_up_sla_met_rate": 0.0,
+      "defer_sla_met_rate": 0.0,
+      "oracle_sla_met_rate": 0.2,
+      "defer_median_wait_min_when_deferred": null,
+      "oracle_median_wait_min_when_waited": 310.0
+    },
+    "1440": {
+      "jobs_needing_deferral": 8,
+      "run_now_sla_met_rate": 0.0,
+      "give_up_sla_met_rate": 0.0,
+      "defer_sla_met_rate": 0.0,
+      "oracle_sla_met_rate": 0.125,
+      "defer_median_wait_min_when_deferred": null,
+      "oracle_median_wait_min_when_waited": 210.0
+    }
+  },
+  "tq": {
+    "180": {
+      "jobs_needing_deferral": 71,
+      "run_now_sla_met_rate": 0.0,
+      "give_up_sla_met_rate": 0.0,
+      "defer_sla_met_rate": 0.0,
+      "oracle_sla_met_rate": 0.056338028169014086,
+      "defer_median_wait_min_when_deferred": null,
+      "oracle_median_wait_min_when_waited": 72.5
+    },
+    "720": {
+      "jobs_needing_deferral": 56,
+      "run_now_sla_met_rate": 0.0,
+      "give_up_sla_met_rate": 0.0,
+      "defer_sla_met_rate": 0.0,
+      "oracle_sla_met_rate": 0.16071428571428573,
+      "defer_median_wait_min_when_deferred": null,
+      "oracle_median_wait_min_when_waited": 230.0
+    },
+    "1440": {
+      "jobs_needing_deferral": 55,
+      "run_now_sla_met_rate": 0.0,
+      "give_up_sla_met_rate": 0.0,
+      "defer_sla_met_rate": 0.0,
+      "oracle_sla_met_rate": 0.38181818181818183,
+      "defer_median_wait_min_when_deferred": null,
+      "oracle_median_wait_min_when_waited": 320.0
+    }
+  }
+}

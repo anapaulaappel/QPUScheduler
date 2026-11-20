@@ -1,0 +1,6 @@
+numpy>=1.26.0
+pandas>=2.0.0
+# Prophet for robust time-series forecasting (optional but recommended)
+# Install with: pip install prophet
+# Note: prophet requires pystan which may take a few minutes to install
+prophet>=1.1.5

@@ -1,0 +1,1132 @@
+{
+ "B": 2000,
+ "seed": 20261120,
+ "method": "paired cluster bootstrap over circuits, percentile 95% CI",
+ "rows": [
+  {
+   "experiment": "E1",
+   "metric": "spearman",
+   "predictor": "pred_none",
+   "point": 0.9459,
+   "lo": 0.8899,
+   "hi": 0.9672,
+   "n_circuits": 35
+  },
+  {
+   "experiment": "E1",
+   "metric": "spearman",
+   "predictor": "pred_table",
+   "point": 0.9697,
+   "lo": 0.9375,
+   "hi": 0.9806,
+   "n_circuits": 35
+  },
+  {
+   "experiment": "E1",
+   "metric": "spearman",
+   "predictor": "pred_static",
+   "point": 0.9888,
+   "lo": 0.9754,
+   "hi": 0.9935,
+   "n_circuits": 35
+  },
+  {
+   "experiment": "E1",
+   "metric": "spearman",
+   "predictor": "pred_static_calibrated",
+   "point": 0.9789,
+   "lo": 0.9573,
+   "hi": 0.9872,
+   "n_circuits": 35
+  },
+  {
+   "experiment": "E1",
+   "metric": "spearman",
+   "predictor": "pred_calibrated",
+   "point": 0.9809,
+   "lo": 0.961,
+   "hi": 0.9888,
+   "n_circuits": 35
+  },
+  {
+   "experiment": "E2",
+   "metric": "spearman",
+   "predictor": "raw_fidelity",
+   "point": 0.3708,
+   "lo": 0.3349,
+   "hi": 0.4198,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E2",
+   "metric": "regret",
+   "predictor": "raw_fidelity",
+   "point": 0.0193,
+   "lo": 0.0155,
+   "hi": 0.0234,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E2",
+   "metric": "top1",
+   "predictor": "raw_fidelity",
+   "point": 0.1863,
+   "lo": 0.1078,
+   "hi": 0.2647,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E2",
+   "metric": "spearman",
+   "predictor": "esp_logical",
+   "point": 0.9423,
+   "lo": 0.925,
+   "hi": 0.9538,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E2",
+   "metric": "regret",
+   "predictor": "esp_logical",
+   "point": 0.041,
+   "lo": 0.0311,
+   "hi": 0.0504,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E2",
+   "metric": "top1",
+   "predictor": "esp_logical",
+   "point": 0.2451,
+   "lo": 0.1667,
+   "hi": 0.3333,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E2",
+   "metric": "spearman",
+   "predictor": "esp_estimated",
+   "point": 0.9492,
+   "lo": 0.9299,
+   "hi": 0.9623,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E2",
+   "metric": "regret",
+   "predictor": "esp_estimated",
+   "point": 0.0157,
+   "lo": 0.0119,
+   "hi": 0.0195,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E2",
+   "metric": "top1",
+   "predictor": "esp_estimated",
+   "point": 0.3235,
+   "lo": 0.2353,
+   "hi": 0.4216,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E2",
+   "metric": "spearman",
+   "predictor": "esp_per_qubit",
+   "point": 0.8073,
+   "lo": 0.776,
+   "hi": 0.8329,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E2",
+   "metric": "regret",
+   "predictor": "esp_per_qubit",
+   "point": 0.0363,
+   "lo": 0.0266,
+   "hi": 0.046,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E2",
+   "metric": "top1",
+   "predictor": "esp_per_qubit",
+   "point": 0.2451,
+   "lo": 0.1667,
+   "hi": 0.3333,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E2",
+   "metric": "spearman",
+   "predictor": "esp_actual",
+   "point": 0.9422,
+   "lo": 0.9286,
+   "hi": 0.9521,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E2",
+   "metric": "regret",
+   "predictor": "esp_actual",
+   "point": 0.0146,
+   "lo": 0.0108,
+   "hi": 0.0184,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E2",
+   "metric": "top1",
+   "predictor": "esp_actual",
+   "point": 0.4216,
+   "lo": 0.3235,
+   "hi": 0.5196,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E2",
+   "metric": "spearman",
+   "predictor": "learned",
+   "point": 0.9574,
+   "lo": 0.9477,
+   "hi": 0.964,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E2",
+   "metric": "regret",
+   "predictor": "learned",
+   "point": 0.0136,
+   "lo": 0.0105,
+   "hi": 0.017,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E2",
+   "metric": "top1",
+   "predictor": "learned",
+   "point": 0.3922,
+   "lo": 0.3039,
+   "hi": 0.4902,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E6",
+   "metric": "spearman",
+   "predictor": "simulated",
+   "point": 0.9688,
+   "lo": 0.9567,
+   "hi": 0.9745,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E6",
+   "metric": "spearman",
+   "predictor": "raw_fidelity",
+   "point": 0.1719,
+   "lo": 0.143,
+   "hi": 0.2145,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E6",
+   "metric": "regret",
+   "predictor": "raw_fidelity",
+   "point": 0.008,
+   "lo": 0.0004,
+   "hi": 0.0193,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E6",
+   "metric": "top1",
+   "predictor": "raw_fidelity",
+   "point": 0.8824,
+   "lo": 0.8137,
+   "hi": 0.9412,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E6",
+   "metric": "spearman",
+   "predictor": "esp_estimated",
+   "point": 0.9452,
+   "lo": 0.9187,
+   "hi": 0.9612,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E6",
+   "metric": "regret",
+   "predictor": "esp_estimated",
+   "point": 0.008,
+   "lo": 0.0004,
+   "hi": 0.0202,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E6",
+   "metric": "top1",
+   "predictor": "esp_estimated",
+   "point": 0.8824,
+   "lo": 0.8235,
+   "hi": 0.9412,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E6",
+   "metric": "spearman",
+   "predictor": "esp_actual",
+   "point": 0.9516,
+   "lo": 0.928,
+   "hi": 0.964,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E6",
+   "metric": "regret",
+   "predictor": "esp_actual",
+   "point": 0.008,
+   "lo": 0.0004,
+   "hi": 0.0203,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E6",
+   "metric": "top1",
+   "predictor": "esp_actual",
+   "point": 0.8824,
+   "lo": 0.8233,
+   "hi": 0.9412,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E7-5dev",
+   "metric": "regret",
+   "predictor": "esp_estimated",
+   "point": 0.0096,
+   "lo": 0.0,
+   "hi": 0.0271,
+   "n_circuits": 28
+  },
+  {
+   "experiment": "E7-5dev",
+   "metric": "top1",
+   "predictor": "esp_estimated",
+   "point": 0.8929,
+   "lo": 0.7857,
+   "hi": 1.0,
+   "n_circuits": 28
+  },
+  {
+   "experiment": "E7-5dev",
+   "metric": "regret",
+   "predictor": "esp_actual",
+   "point": 0.0486,
+   "lo": 0.0175,
+   "hi": 0.0863,
+   "n_circuits": 28
+  },
+  {
+   "experiment": "E7-5dev",
+   "metric": "top1",
+   "predictor": "esp_actual",
+   "point": 0.7143,
+   "lo": 0.5357,
+   "hi": 0.8571,
+   "n_circuits": 28
+  },
+  {
+   "experiment": "E7-6dev",
+   "metric": "regret",
+   "predictor": "esp_estimated",
+   "point": 0.0508,
+   "lo": 0.0142,
+   "hi": 0.0939,
+   "n_circuits": 28
+  },
+  {
+   "experiment": "E7-6dev",
+   "metric": "top1",
+   "predictor": "esp_estimated",
+   "point": 0.75,
+   "lo": 0.6062,
+   "hi": 0.8929,
+   "n_circuits": 28
+  },
+  {
+   "experiment": "E7-6dev",
+   "metric": "regret",
+   "predictor": "esp_actual",
+   "point": 0.0958,
+   "lo": 0.0488,
+   "hi": 0.1568,
+   "n_circuits": 28
+  },
+  {
+   "experiment": "E7-6dev",
+   "metric": "top1",
+   "predictor": "esp_actual",
+   "point": 0.5714,
+   "lo": 0.392,
+   "hi": 0.75,
+   "n_circuits": 28
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "violations@0.3",
+   "predictor": "raw_fidelity",
+   "point": 9,
+   "lo": 4.0,
+   "hi": 15.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "false_rejections@0.3",
+   "predictor": "raw_fidelity",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "violations@0.4",
+   "predictor": "raw_fidelity",
+   "point": 18,
+   "lo": 11.0,
+   "hi": 26.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "false_rejections@0.4",
+   "predictor": "raw_fidelity",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "violations@0.5",
+   "predictor": "raw_fidelity",
+   "point": 26,
+   "lo": 18.0,
+   "hi": 35.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "false_rejections@0.5",
+   "predictor": "raw_fidelity",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "violations@0.6",
+   "predictor": "raw_fidelity",
+   "point": 31,
+   "lo": 23.0,
+   "hi": 40.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "false_rejections@0.6",
+   "predictor": "raw_fidelity",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "violations@0.7",
+   "predictor": "raw_fidelity",
+   "point": 43,
+   "lo": 33.0,
+   "hi": 53.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "false_rejections@0.7",
+   "predictor": "raw_fidelity",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "violations@0.8",
+   "predictor": "raw_fidelity",
+   "point": 52,
+   "lo": 42.0,
+   "hi": 62.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "false_rejections@0.8",
+   "predictor": "raw_fidelity",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "violations@0.9",
+   "predictor": "raw_fidelity",
+   "point": 79,
+   "lo": 71.0,
+   "hi": 87.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "false_rejections@0.9",
+   "predictor": "raw_fidelity",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "violations@0.3",
+   "predictor": "esp_estimated",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "false_rejections@0.3",
+   "predictor": "esp_estimated",
+   "point": 10,
+   "lo": 5.0,
+   "hi": 16.025,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "violations@0.4",
+   "predictor": "esp_estimated",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "false_rejections@0.4",
+   "predictor": "esp_estimated",
+   "point": 10,
+   "lo": 5.0,
+   "hi": 17.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "violations@0.5",
+   "predictor": "esp_estimated",
+   "point": 1,
+   "lo": 0.0,
+   "hi": 3.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "false_rejections@0.5",
+   "predictor": "esp_estimated",
+   "point": 8,
+   "lo": 3.0,
+   "hi": 13.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "violations@0.6",
+   "predictor": "esp_estimated",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "false_rejections@0.6",
+   "predictor": "esp_estimated",
+   "point": 13,
+   "lo": 7.0,
+   "hi": 20.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "violations@0.7",
+   "predictor": "esp_estimated",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "false_rejections@0.7",
+   "predictor": "esp_estimated",
+   "point": 17,
+   "lo": 10.0,
+   "hi": 25.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "violations@0.8",
+   "predictor": "esp_estimated",
+   "point": 1,
+   "lo": 0.0,
+   "hi": 3.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "false_rejections@0.8",
+   "predictor": "esp_estimated",
+   "point": 14,
+   "lo": 8.0,
+   "hi": 22.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "violations@0.9",
+   "predictor": "esp_estimated",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "false_rejections@0.9",
+   "predictor": "esp_estimated",
+   "point": 20,
+   "lo": 12.0,
+   "hi": 28.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "violations@0.3",
+   "predictor": "esp_actual",
+   "point": 2,
+   "lo": 0.0,
+   "hi": 5.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "false_rejections@0.3",
+   "predictor": "esp_actual",
+   "point": 1,
+   "lo": 0.0,
+   "hi": 3.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "violations@0.4",
+   "predictor": "esp_actual",
+   "point": 1,
+   "lo": 0.0,
+   "hi": 3.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "false_rejections@0.4",
+   "predictor": "esp_actual",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "violations@0.5",
+   "predictor": "esp_actual",
+   "point": 1,
+   "lo": 0.0,
+   "hi": 3.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "false_rejections@0.5",
+   "predictor": "esp_actual",
+   "point": 2,
+   "lo": 0.0,
+   "hi": 5.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "violations@0.6",
+   "predictor": "esp_actual",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "false_rejections@0.6",
+   "predictor": "esp_actual",
+   "point": 3,
+   "lo": 0.0,
+   "hi": 7.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "violations@0.7",
+   "predictor": "esp_actual",
+   "point": 2,
+   "lo": 0.0,
+   "hi": 5.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "false_rejections@0.7",
+   "predictor": "esp_actual",
+   "point": 3,
+   "lo": 0.0,
+   "hi": 7.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "violations@0.8",
+   "predictor": "esp_actual",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "false_rejections@0.8",
+   "predictor": "esp_actual",
+   "point": 3,
+   "lo": 0.0,
+   "hi": 7.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "violations@0.9",
+   "predictor": "esp_actual",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E3-sim",
+   "metric": "false_rejections@0.9",
+   "predictor": "esp_actual",
+   "point": 12,
+   "lo": 6.0,
+   "hi": 19.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "violations@0.3",
+   "predictor": "raw_fidelity",
+   "point": 42,
+   "lo": 32.0,
+   "hi": 52.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "false_rejections@0.3",
+   "predictor": "raw_fidelity",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "violations@0.4",
+   "predictor": "raw_fidelity",
+   "point": 50,
+   "lo": 40.0,
+   "hi": 60.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "false_rejections@0.4",
+   "predictor": "raw_fidelity",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "violations@0.5",
+   "predictor": "raw_fidelity",
+   "point": 53,
+   "lo": 43.0,
+   "hi": 63.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "false_rejections@0.5",
+   "predictor": "raw_fidelity",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "violations@0.6",
+   "predictor": "raw_fidelity",
+   "point": 57,
+   "lo": 47.0,
+   "hi": 67.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "false_rejections@0.6",
+   "predictor": "raw_fidelity",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "violations@0.7",
+   "predictor": "raw_fidelity",
+   "point": 65,
+   "lo": 55.0,
+   "hi": 74.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "false_rejections@0.7",
+   "predictor": "raw_fidelity",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "violations@0.8",
+   "predictor": "raw_fidelity",
+   "point": 74,
+   "lo": 64.0,
+   "hi": 82.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "false_rejections@0.8",
+   "predictor": "raw_fidelity",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "violations@0.9",
+   "predictor": "raw_fidelity",
+   "point": 93,
+   "lo": 87.0,
+   "hi": 98.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "false_rejections@0.9",
+   "predictor": "raw_fidelity",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "violations@0.3",
+   "predictor": "esp_estimated",
+   "point": 6,
+   "lo": 2.0,
+   "hi": 11.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "false_rejections@0.3",
+   "predictor": "esp_estimated",
+   "point": 4,
+   "lo": 1.0,
+   "hi": 8.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "violations@0.4",
+   "predictor": "esp_estimated",
+   "point": 5,
+   "lo": 1.0,
+   "hi": 10.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "false_rejections@0.4",
+   "predictor": "esp_estimated",
+   "point": 3,
+   "lo": 0.0,
+   "hi": 7.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "violations@0.5",
+   "predictor": "esp_estimated",
+   "point": 2,
+   "lo": 0.0,
+   "hi": 5.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "false_rejections@0.5",
+   "predictor": "esp_estimated",
+   "point": 7,
+   "lo": 2.0,
+   "hi": 12.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "violations@0.6",
+   "predictor": "esp_estimated",
+   "point": 2,
+   "lo": 0.0,
+   "hi": 5.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "false_rejections@0.6",
+   "predictor": "esp_estimated",
+   "point": 8,
+   "lo": 3.0,
+   "hi": 14.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "violations@0.7",
+   "predictor": "esp_estimated",
+   "point": 1,
+   "lo": 0.0,
+   "hi": 3.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "false_rejections@0.7",
+   "predictor": "esp_estimated",
+   "point": 11,
+   "lo": 5.0,
+   "hi": 17.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "violations@0.8",
+   "predictor": "esp_estimated",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "false_rejections@0.8",
+   "predictor": "esp_estimated",
+   "point": 19,
+   "lo": 12.0,
+   "hi": 27.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "violations@0.9",
+   "predictor": "esp_estimated",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "false_rejections@0.9",
+   "predictor": "esp_estimated",
+   "point": 10,
+   "lo": 4.0,
+   "hi": 16.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "violations@0.3",
+   "predictor": "esp_actual",
+   "point": 5,
+   "lo": 1.0,
+   "hi": 9.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "false_rejections@0.3",
+   "predictor": "esp_actual",
+   "point": 9,
+   "lo": 4.0,
+   "hi": 15.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "violations@0.4",
+   "predictor": "esp_actual",
+   "point": 2,
+   "lo": 0.0,
+   "hi": 5.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "false_rejections@0.4",
+   "predictor": "esp_actual",
+   "point": 7,
+   "lo": 2.0,
+   "hi": 12.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "violations@0.5",
+   "predictor": "esp_actual",
+   "point": 2,
+   "lo": 0.0,
+   "hi": 5.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "false_rejections@0.5",
+   "predictor": "esp_actual",
+   "point": 10,
+   "lo": 4.0,
+   "hi": 16.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "violations@0.6",
+   "predictor": "esp_actual",
+   "point": 1,
+   "lo": 0.0,
+   "hi": 3.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "false_rejections@0.6",
+   "predictor": "esp_actual",
+   "point": 10,
+   "lo": 4.0,
+   "hi": 16.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "violations@0.7",
+   "predictor": "esp_actual",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "false_rejections@0.7",
+   "predictor": "esp_actual",
+   "point": 18,
+   "lo": 11.0,
+   "hi": 26.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "violations@0.8",
+   "predictor": "esp_actual",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "false_rejections@0.8",
+   "predictor": "esp_actual",
+   "point": 20,
+   "lo": 12.0,
+   "hi": 28.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "violations@0.9",
+   "predictor": "esp_actual",
+   "point": 0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_circuits": 102
+  },
+  {
+   "experiment": "E9-ibm",
+   "metric": "false_rejections@0.9",
+   "predictor": "esp_actual",
+   "point": 9,
+   "lo": 4.0,
+   "hi": 15.0,
+   "n_circuits": 102
+  }
+ ]
+}

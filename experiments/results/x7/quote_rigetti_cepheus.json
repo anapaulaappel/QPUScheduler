@@ -1,0 +1,86 @@
+{
+ "ghz_4": {
+  "credits": 1.0,
+  "shots": 1000,
+  "n2": 6,
+  "n1": 42,
+  "depth": 31
+ },
+ "ghz_8": {
+  "credits": 1.0,
+  "shots": 1000,
+  "n2": 14,
+  "n1": 90,
+  "depth": 63
+ },
+ "qft_4": {
+  "credits": 1.0,
+  "shots": 1000,
+  "n2": 54,
+  "n1": 253,
+  "depth": 162
+ },
+ "qft_8": {
+  "credits": 1.0,
+  "shots": 1000,
+  "n2": 220,
+  "n1": 966,
+  "depth": 561
+ },
+ "random_4": {
+  "credits": 1.0,
+  "shots": 1000,
+  "n2": 24,
+  "n1": 123,
+  "depth": 90
+ },
+ "random_8": {
+  "credits": 1.0,
+  "shots": 1000,
+  "n2": 80,
+  "n1": 464,
+  "depth": 185
+ },
+ "qaoa_ring_4": {
+  "credits": 1.0,
+  "shots": 1000,
+  "n2": 32,
+  "n1": 196,
+  "depth": 171
+ },
+ "qaoa_ring_8": {
+  "credits": 1.0,
+  "shots": 1000,
+  "n2": 64,
+  "n1": 389,
+  "depth": 331
+ },
+ "real_amplitudes_4": {
+  "credits": 1.0,
+  "shots": 1000,
+  "n2": 45,
+  "n1": 150,
+  "depth": 117
+ },
+ "real_amplitudes_8": {
+  "credits": 1.0,
+  "shots": 1000,
+  "n2": 256,
+  "n1": 709,
+  "depth": 274
+ },
+ "bernstein_vazirani_4": {
+  "credits": 1.0,
+  "shots": 1000,
+  "n2": 2,
+  "n1": 21,
+  "depth": 15
+ },
+ "bernstein_vazirani_8": {
+  "credits": 1.0,
+  "shots": 1000,
+  "n2": 8,
+  "n1": 57,
+  "depth": 21
+ }
+}

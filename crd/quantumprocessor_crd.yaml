@@ -1,0 +1,184 @@
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: quantumprocessors.quantum.openshift.io
+spec:
+  group: quantum.openshift.io
+  names:
+    kind: QuantumProcessor
+    listKind: QuantumProcessorList
+    plural: quantumprocessors
+    singular: quantumprocessor
+    shortNames:
+      - qpu
+  scope: Namespaced
+  versions:
+    - name: v1alpha1
+      served: true
+      storage: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              required: ["provider", "backendName"]
+              properties:
+                provider:
+                  type: string
+                  description: "QPU provider (ibm-quantum, aws-braket, simulator)"
+                  enum: ["ibm-quantum", "aws-braket", "azure-quantum", "quantinuum", "ionq", "rigetti", "simulator"]
+                backendName:
+                  type: string
+                  description: "Provider-specific backend name (e.g. ibm_brisbane, aer_simulator)"
+                qubitCount:
+                  type: integer
+                  description: "Number of qubits available"
+                topology:
+                  type: string
+                  description: "Hardware topology descriptor (e.g. heavy-hex, falcon, all-to-all)"
+                isSimulator:
+                  type: boolean
+                  description: "True if this is a classical simulator, not real QPU"
+                  default: false
+                pollingIntervalSeconds:
+                  type: integer
+                  description: "How often the probe should poll this backend"
+                  default: 300
+                secretRef:
+                  type: object
+                  description: "Reference to Secret containing API credentials"
+                  properties:
+                    name:
+                      type: string
+                    key:
+                      type: string
+            status:
+              type: object
+              properties:
+                lastUpdated:
+                  type: string
+                  description: "ISO8601 timestamp of last telemetry update"
+                calibrationTimestamp:
+                  type: string
+                  description: "ISO8601 timestamp of last hardware calibration"
+                calibrationAgeMinutes:
+                  type: number
+                  description: "Minutes since last calibration"
+                available:
+                  type: boolean
+                  description: "False if probe cannot reach provider API"
+                physicalProperties:
+                  type: object
+                  properties:
+                    meanQubitFidelity:
+                      type: number
+                    minQubitFidelity:
+                      type: number
+                    maxQubitFidelity:
+                      type: number
+                    meanT1Microseconds:
+                      type: number
+                    minT1Microseconds:
+                      type: number
+                    meanT2Microseconds:
+                      type: number
+                    minT2Microseconds:
+                      type: number
+                    meanSingleQubitGateErrorRate:
+                      type: number
+                    maxSingleQubitGateErrorRate:
+                      type: number
+                    meanTwoQubitGateErrorRate:
+                      type: number
+                    maxTwoQubitGateErrorRate:
+                      type: number
+                    meanReadoutErrorRate:
+                      type: number
+                    queueDepth:
+                      type: integer
+                    estimatedQueueWaitMinutes:
+                      type: number
+                    costPerShot:
+                      type: number
+                      description: "Estimated cost in USD per shot"
+                    nativeGateSet:
+                      type: array
+                      items:
+                        type: string
+                      description: "List of native gates supported by this QPU"
+                    couplingMap:
+                      type: array
+                      description: "Undirected qubit connectivity as [q0, q1] pairs"
+                      items:
+                        type: array
+                        items:
+                          type: integer
+                    operationDurations:
+                      type: object
+                      description: "Mean gate/measure/reset durations (gate_1q_ns, gate_2q_ns, measure_ns, reset_us)"
+                      additionalProperties:
+                        type: number
+                pricing:
+                  type: object
+                  description: "Provider pricing model (scheme: per_shot | per_gate_shot | time | prepaid_time | free, plus unit prices)"
+                  x-kubernetes-preserve-unknown-fields: true
+                qualityForecast:
+                  type: array
+                  description: "Predicted quality windows (populated by Forecaster)"
+                  items:
+                    type: object
+                    properties:
+                      startTime:
+                        type: string
+                      endTime:
+                        type: string
+                      predictedFidelity:
+                        type: number
+                      confidence:
+                        type: number
+                      minutesFromNow:
+                        type: number
+                      minLowerBound:
+                        type: number
+                        description: "Most pessimistic predicted fidelity in the window"
+                conditions:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                        enum: ["TelemetryFresh", "BelowFidelityThreshold", "HighQueueDepth"]
+                      status:
+                        type: string
+                        enum: ["True", "False", "Unknown"]
+                      lastTransitionTime:
+                        type: string
+                      reason:
+                        type: string
+      additionalPrinterColumns:
+        - name: Provider
+          type: string
+          jsonPath: .spec.provider
+        - name: Backend
+          type: string
+          jsonPath: .spec.backendName
+        - name: Qubits
+          type: integer
+          jsonPath: .spec.qubitCount
+        - name: Fidelity
+          type: number
+          jsonPath: .status.physicalProperties.meanQubitFidelity
+        - name: 2Q-Error
+          type: number
+          jsonPath: .status.physicalProperties.meanTwoQubitGateErrorRate
+        - name: Queue
+          type: integer
+          jsonPath: .status.physicalProperties.queueDepth
+        - name: Available
+          type: boolean
+          jsonPath: .status.available
+        - name: Age
+          type: date
+          jsonPath: .metadata.creationTimestamp

@@ -1,0 +1,142 @@
+{
+  "all": {
+    "n": 280,
+    "pred_none": {
+      "spearman": 0.9459116277350474,
+      "mae_2q": 40.93571428571428,
+      "median_rel_err": 0.40646853146853146
+    },
+    "pred_table": {
+      "spearman": 0.9697022809537547,
+      "mae_2q": 30.50321428571429,
+      "median_rel_err": 0.31406828465652
+    },
+    "pred_static": {
+      "spearman": 0.9887972393054976,
+      "mae_2q": 93.06071428571428,
+      "median_rel_err": 0.5071428571428571
+    },
+    "pred_static_calibrated": {
+      "spearman": 0.9789322984940864,
+      "mae_2q": 20.87135178560895,
+      "median_rel_err": 0.12409347987153396
+    },
+    "pred_graph": {
+      "spearman": 0.9862399368618605,
+      "mae_2q": 83.55714285714286,
+      "median_rel_err": 0.5357142857142857
+    },
+    "pred_calibrated": {
+      "spearman": 0.9809373006087296,
+      "mae_2q": 12.439790745024492,
+      "median_rel_err": 0.07052398636443799
+    },
+    "est_ms_median": 0.4981249803677201,
+    "transpile_ms_median": 5.0711666311447825
+  },
+  "heavy-hex": {
+    "n": 175,
+    "pred_none": {
+      "spearman": 0.9773683013812717,
+      "mae_2q": 54.84,
+      "median_rel_err": 0.42857142857142855
+    },
+    "pred_table": {
+      "spearman": 0.9773683013812717,
+      "mae_2q": 39.74571428571429,
+      "median_rel_err": 0.3575949367088608
+    },
+    "pred_static": {
+      "spearman": 0.9908029534890295,
+      "mae_2q": 129.22285714285715,
+      "median_rel_err": 0.5769230769230769
+    },
+    "pred_static_calibrated": {
+      "spearman": 0.9831604770289384,
+      "mae_2q": 25.54988657486342,
+      "median_rel_err": 0.12626124977227182
+    },
+    "pred_graph": {
+      "spearman": 0.9879505460929844,
+      "mae_2q": 117.73714285714286,
+      "median_rel_err": 0.5769230769230769
+    },
+    "pred_calibrated": {
+      "spearman": 0.9857840321848829,
+      "mae_2q": 13.97881335468514,
+      "median_rel_err": 0.08001788612799005
+    },
+    "est_ms_median": 0.7153749465942383,
+    "transpile_ms_median": 6.187555690606435
+  },
+  "square-lattice": {
+    "n": 35,
+    "pred_none": {
+      "spearman": 0.9873081618517615,
+      "mae_2q": 28.542857142857144,
+      "median_rel_err": 0.225
+    },
+    "pred_table": {
+      "spearman": 0.9873081618517615,
+      "mae_2q": 20.554285714285715,
+      "median_rel_err": 0.30000000000000004
+    },
+    "pred_static": {
+      "spearman": 0.9933394706973461,
+      "mae_2q": 73.62857142857143,
+      "median_rel_err": 0.3
+    },
+    "pred_static_calibrated": {
+      "spearman": 0.9940430327866187,
+      "mae_2q": 14.478524267697296,
+      "median_rel_err": 0.01475012147476049
+    },
+    "pred_graph": {
+      "spearman": 0.9860536852303808,
+      "mae_2q": 55.02857142857143,
+      "median_rel_err": 0.075
+    },
+    "pred_calibrated": {
+      "spearman": 0.9968463126309124,
+      "mae_2q": 4.881402043913103,
+      "median_rel_err": 0.019351291549816792
+    },
+    "est_ms_median": 0.5010000895708799,
+    "transpile_ms_median": 5.0776666806389885
+  },
+  "all-to-all": {
+    "n": 70,
+    "pred_none": {
+      "spearman": 0.9736934432937703,
+      "mae_2q": 12.371428571428572,
+      "median_rel_err": 0.3076923076923077
+    },
+    "pred_table": {
+      "spearman": 0.9736934432937703,
+      "mae_2q": 12.371428571428572,
+      "median_rel_err": 0.3076923076923077
+    },
+    "pred_static": {
+      "spearman": 0.9736934432937703,
+      "mae_2q": 12.371428571428572,
+      "median_rel_err": 0.3076923076923077
+    },
+    "pred_static_calibrated": {
+      "spearman": 0.9736934432937703,
+      "mae_2q": 12.371428571428572,
+      "median_rel_err": 0.3076923076923077
+    },
+    "pred_graph": {
+      "spearman": 0.9736934432937703,
+      "mae_2q": 12.371428571428572,
+      "median_rel_err": 0.3076923076923077
+    },
+    "pred_calibrated": {
+      "spearman": 0.9736934432937703,
+      "mae_2q": 12.371428571428572,
+      "median_rel_err": 0.3076923076923077
+    },
+    "est_ms_median": 0.07447914686053991,
+    "transpile_ms_median": 2.3435208325584727
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "shots": 4000,
+  "usage_seconds": {
+    "ibm_fez": 32,
+    "ibm_marrakesh": 33,
+    "ibm_kingston": 33
+  },
+  "n": 84,
+  "backends": [
+    "ibm_fez",
+    "ibm_kingston",
+    "ibm_marrakesh"
+  ],
+  "simulated": {
+    "spearman_vs_measured": 0.9255177512115899,
+    "mae_vs_measured": 0.17797619047619048,
+    "mean_regret": 0.014705357142857145,
+    "top1_accuracy": 0.6785714285714286
+  },
+  "raw_fidelity": {
+    "spearman_vs_measured": 0.15724858505453243,
+    "mae_vs_measured": null,
+    "mean_regret": 0.009571428571428568,
+    "top1_accuracy": 0.8928571428571429
+  },
+  "esp_estimated": {
+    "spearman_vs_measured": 0.9093587531486034,
+    "mae_vs_measured": 0.11190167761918168,
+    "mean_regret": 0.009571428571428568,
+    "top1_accuracy": 0.8928571428571429
+  },
+  "esp_actual": {
+    "spearman_vs_measured": 0.931582437827961,
+    "mae_vs_measured": 0.12117215040162818,
+    "mean_regret": 0.009571428571428568,
+    "top1_accuracy": 0.8928571428571429
+  },
+  "note": "simulated column: fez/marrakesh from the 29 Oct collect (calibration close to execution); kingston simulated with calibration of 3 Nov.",
+  "always_device": {
+    "ibm_fez": 0.07949107142857144,
+    "ibm_marrakesh": 0.10301785714285715,
+    "ibm_kingston": 0.009571428571428568
+  }
+}

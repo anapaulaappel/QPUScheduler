@@ -1,0 +1,259 @@
+{
+ "taus": [
+  0.3,
+  0.4,
+  0.5,
+  0.6,
+  0.7,
+  0.8
+ ],
+ "additive": {
+  "ibm_measured": [
+   {
+    "margin": -0.1,
+    "violations": 37,
+    "false_rejections": 13
+   },
+   {
+    "margin": -0.08,
+    "violations": 34,
+    "false_rejections": 23
+   },
+   {
+    "margin": -0.06,
+    "violations": 25,
+    "false_rejections": 32
+   },
+   {
+    "margin": -0.04,
+    "violations": 22,
+    "false_rejections": 40
+   },
+   {
+    "margin": -0.02,
+    "violations": 20,
+    "false_rejections": 50
+   },
+   {
+    "margin": 0.0,
+    "violations": 16,
+    "false_rejections": 52
+   },
+   {
+    "margin": 0.02,
+    "violations": 16,
+    "false_rejections": 62
+   },
+   {
+    "margin": 0.04,
+    "violations": 11,
+    "false_rejections": 75
+   },
+   {
+    "margin": 0.06,
+    "violations": 10,
+    "false_rejections": 86
+   },
+   {
+    "margin": 0.08,
+    "violations": 10,
+    "false_rejections": 100
+   },
+   {
+    "margin": 0.1,
+    "violations": 6,
+    "false_rejections": 104
+   },
+   {
+    "margin": 0.12,
+    "violations": 6,
+    "false_rejections": 114
+   },
+   {
+    "margin": 0.14,
+    "violations": 5,
+    "false_rejections": 131
+   },
+   {
+    "margin": 0.16,
+    "violations": 5,
+    "false_rejections": 140
+   },
+   {
+    "margin": 0.18,
+    "violations": 5,
+    "false_rejections": 153
+   },
+   {
+    "margin": 0.2,
+    "violations": 4,
+    "false_rejections": 157
+   },
+   {
+    "margin": 0.22,
+    "violations": 4,
+    "false_rejections": 166
+   },
+   {
+    "margin": 0.24,
+    "violations": 3,
+    "false_rejections": 181
+   },
+   {
+    "margin": 0.26,
+    "violations": 3,
+    "false_rejections": 187
+   },
+   {
+    "margin": 0.28,
+    "violations": 3,
+    "false_rejections": 197
+   },
+   {
+    "margin": 0.3,
+    "violations": 2,
+    "false_rejections": 201
+   }
+  ],
+  "simulated": [
+   {
+    "margin": -0.1,
+    "violations": 15,
+    "false_rejections": 27
+   },
+   {
+    "margin": -0.08,
+    "violations": 13,
+    "false_rejections": 39
+   },
+   {
+    "margin": -0.06,
+    "violations": 7,
+    "false_rejections": 42
+   },
+   {
+    "margin": -0.04,
+    "violations": 7,
+    "false_rejections": 54
+   },
+   {
+    "margin": -0.02,
+    "violations": 4,
+    "false_rejections": 60
+   },
+   {
+    "margin": 0.0,
+    "violations": 2,
+    "false_rejections": 72
+   },
+   {
+    "margin": 0.02,
+    "violations": 1,
+    "false_rejections": 82
+   },
+   {
+    "margin": 0.04,
+    "violations": 0,
+    "false_rejections": 92
+   },
+   {
+    "margin": 0.06,
+    "violations": 0,
+    "false_rejections": 116
+   },
+   {
+    "margin": 0.08,
+    "violations": 0,
+    "false_rejections": 126
+   },
+   {
+    "margin": 0.1,
+    "violations": 0,
+    "false_rejections": 142
+   },
+   {
+    "margin": 0.12,
+    "violations": 0,
+    "false_rejections": 155
+   },
+   {
+    "margin": 0.14,
+    "violations": 0,
+    "false_rejections": 168
+   },
+   {
+    "margin": 0.16,
+    "violations": 0,
+    "false_rejections": 192
+   },
+   {
+    "margin": 0.18,
+    "violations": 0,
+    "false_rejections": 200
+   },
+   {
+    "margin": 0.2,
+    "violations": 0,
+    "false_rejections": 216
+   },
+   {
+    "margin": 0.22,
+    "violations": 0,
+    "false_rejections": 228
+   },
+   {
+    "margin": 0.24,
+    "violations": 0,
+    "false_rejections": 240
+   },
+   {
+    "margin": 0.26,
+    "violations": 0,
+    "false_rejections": 263
+   },
+   {
+    "margin": 0.28,
+    "violations": 0,
+    "false_rejections": 271
+   },
+   {
+    "margin": 0.3,
+    "violations": 0,
+    "false_rejections": 287
+   }
+  ]
+ },
+ "conformal_ibm": [
+  {
+   "delta": 0.05,
+   "median_margin": 0.20782775555618802,
+   "violations": 4,
+   "false_rejections": 158
+  },
+  {
+   "delta": 0.1,
+   "median_margin": 0.1309682929575543,
+   "violations": 6,
+   "false_rejections": 129
+  },
+  {
+   "delta": 0.2,
+   "median_margin": 0.07811117376288279,
+   "violations": 8,
+   "false_rejections": 101
+  },
+  {
+   "delta": 0.3,
+   "median_margin": 0.0096644162296931,
+   "violations": 16,
+   "false_rejections": 58
+  },
+  {
+   "delta": 0.5,
+   "median_margin": -0.009871919580254199,
+   "violations": 16,
+   "false_rejections": 51
+  }
+ ],
+ "raw_fidelity_ibm_violations": 341
+}

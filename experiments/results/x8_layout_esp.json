@@ -1,0 +1,81 @@
+{
+ "calibration": {
+  "ibm_fez": {
+   "published": "2026-11-03 11:27:56-03:00",
+   "mean_1q": 0.006972758229830873,
+   "mean_2q": 0.024570742698898747,
+   "mean_ro": 0.023349859775641024
+  },
+  "ibm_marrakesh": {
+   "published": "2026-11-03 10:57:29-03:00",
+   "mean_1q": 0.02619478097684887,
+   "mean_2q": 0.03550054307684449,
+   "mean_ro": 0.041122045272435896
+  },
+  "ibm_kingston": {
+   "published": "2026-11-03 11:24:27-03:00",
+   "mean_1q": 0.02607287811516421,
+   "mean_2q": 0.04688077865991446,
+   "mean_ro": 0.020151774088541668
+  }
+ },
+ "n_rows": 306,
+ "esp_layout": {
+  "spearman_all": 0.967,
+  "mae_all": 0.197,
+  "fez_vs_marrakesh_regret_top1": [
+   0.0125,
+   0.765
+  ],
+  "three_devices_regret_top1": [
+   0.0092,
+   0.843
+  ]
+ },
+ "esp_mean": {
+  "spearman_all": 0.89,
+  "mae_all": 0.279,
+  "fez_vs_marrakesh_regret_top1": [
+   0.0145,
+   0.755
+  ],
+  "three_devices_regret_top1": [
+   0.0782,
+   0.098
+  ]
+ },
+ "esp_estimated": {
+  "spearman_all": 0.945,
+  "mae_all": 0.099,
+  "fez_vs_marrakesh_regret_top1": [
+   0.0455,
+   0.48
+  ],
+  "three_devices_regret_top1": [
+   0.008,
+   0.882
+  ]
+ },
+ "esp_actual": {
+  "spearman_all": 0.952,
+  "mae_all": 0.098,
+  "fez_vs_marrakesh_regret_top1": [
+   0.0483,
+   0.471
+  ],
+  "three_devices_regret_top1": [
+   0.008,
+   0.882
+  ]
+ },
+ "raw_fidelity": {
+  "fez_vs_marrakesh_regret_top1": [
+   0.0145,
+   0.755
+  ],
+  "three_devices_regret_top1": [
+   0.008,
+   0.882
+  ]
+ }
+}

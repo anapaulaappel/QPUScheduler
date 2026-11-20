@@ -1,0 +1,217 @@
+{
+ "notes": {
+  "ibm_fez": "published calibration 2026-11-13 13:27:59-03:00",
+  "ibm_kingston": "published calibration 2026-11-13 11:57:10-03:00",
+  "ibm_marrakesh": "published calibration 2026-11-13 14:22:56-03:00",
+  "rigetti_cepheus": "Rigetti published medians at GA (Apr 2026): 1Q 99.9%, CZ 99.1%; readout not published, assumed 3%. Job calibration was not available through Open Quantum. | bit order as_is (sum F over 15 asymmetric circuits: as_is 6.55, reversed 5.38)",
+  "aqt_ibex_q1": "AQT published IBEX Q1 figures (1Q 99.97%, 2Q 98.85%); readout assumed 0.5% | bit order as_is (sum F over 14 asymmetric circuits: as_is 10.14, reversed 5.31)"
+ },
+ "all": {
+  "n": 93,
+  "esp_estimated": {
+   "spearman": 0.466,
+   "mae": 0.242
+  },
+  "esp_actual": {
+   "spearman": 0.46,
+   "mae": 0.25
+  },
+  "raw_fidelity": {
+   "spearman": -0.003,
+   "mae": null
+  }
+ },
+ "per_device": {
+  "aqt_ibex_q1": {
+   "n": 17,
+   "esp_estimated": {
+    "spearman": 0.72,
+    "mae": 0.271
+   },
+   "esp_actual": {
+    "spearman": 0.713,
+    "mae": 0.275
+   }
+  },
+  "ibm_fez": {
+   "n": 19,
+   "esp_estimated": {
+    "spearman": 0.74,
+    "mae": 0.154
+   },
+   "esp_actual": {
+    "spearman": 0.754,
+    "mae": 0.17
+   }
+  },
+  "ibm_kingston": {
+   "n": 19,
+   "esp_estimated": {
+    "spearman": 0.772,
+    "mae": 0.133
+   },
+   "esp_actual": {
+    "spearman": 0.818,
+    "mae": 0.153
+   }
+  },
+  "ibm_marrakesh": {
+   "n": 19,
+   "esp_estimated": {
+    "spearman": 0.484,
+    "mae": 0.18
+   },
+   "esp_actual": {
+    "spearman": 0.498,
+    "mae": 0.194
+   }
+  },
+  "rigetti_cepheus": {
+   "n": 19,
+   "esp_estimated": {
+    "spearman": 0.734,
+    "mae": 0.474
+   },
+   "esp_actual": {
+    "spearman": 0.734,
+    "mae": 0.462
+   }
+  }
+ },
+ "per_family": {
+  "adder": {
+   "n": 10,
+   "esp_estimated": {
+    "spearman": 0.818,
+    "mae": 0.187
+   },
+   "esp_actual": {
+    "spearman": 0.527,
+    "mae": 0.207
+   },
+   "raw_fidelity": {
+    "spearman": 0.0,
+    "mae": null
+   }
+  },
+  "bernstein_vazirani": {
+   "n": 19,
+   "esp_estimated": {
+    "spearman": 0.242,
+    "mae": 0.217
+   },
+   "esp_actual": {
+    "spearman": 0.207,
+    "mae": 0.215
+   },
+   "raw_fidelity": {
+    "spearman": -0.03,
+    "mae": null
+   }
+  },
+  "ghz": {
+   "n": 19,
+   "esp_estimated": {
+    "spearman": 0.753,
+    "mae": 0.161
+   },
+   "esp_actual": {
+    "spearman": 0.795,
+    "mae": 0.166
+   },
+   "raw_fidelity": {
+    "spearman": 0.266,
+    "mae": null
+   }
+  },
+  "grover": {
+   "n": 10,
+   "esp_estimated": {
+    "spearman": 0.745,
+    "mae": 0.24
+   },
+   "esp_actual": {
+    "spearman": 0.721,
+    "mae": 0.264
+   },
+   "raw_fidelity": {
+    "spearman": -0.12,
+    "mae": null
+   }
+  },
+  "qaoa_3reg": {
+   "n": 10,
+   "esp_estimated": {
+    "spearman": -0.067,
+    "mae": 0.416
+   },
+   "esp_actual": {
+    "spearman": -0.166,
+    "mae": 0.432
+   },
+   "raw_fidelity": {
+    "spearman": -0.359,
+    "mae": null
+   }
+  },
+  "qaoa_ring": {
+   "n": 10,
+   "esp_estimated": {
+    "spearman": -0.178,
+    "mae": 0.36
+   },
+   "esp_actual": {
+    "spearman": -0.227,
+    "mae": 0.373
+   },
+   "raw_fidelity": {
+    "spearman": -0.239,
+    "mae": null
+   }
+  },
+  "vqe_hea": {
+   "n": 15,
+   "esp_estimated": {
+    "spearman": 0.111,
+    "mae": 0.217
+   },
+   "esp_actual": {
+    "spearman": 0.075,
+    "mae": 0.217
+   },
+   "raw_fidelity": {
+    "spearman": 0.158,
+    "mae": null
+   }
+  }
+ },
+ "selection": {
+  "esp_estimated": {
+   "circuits": 19,
+   "mean_regret": 0.2393265444722534,
+   "top1": 0.42105263157894735
+  },
+  "esp_actual": {
+   "circuits": 19,
+   "mean_regret": 0.3122470103163326,
+   "top1": 0.2631578947368421
+  }
+ },
+ "selection_ibm_only": {
+  "esp_estimated": {
+   "circuits": 19,
+   "mean_regret": 0.008957299114497433,
+   "top1": 0.631578947368421
+  },
+  "esp_actual": {
+   "circuits": 19,
+   "mean_regret": 0.008957299114497433,
+   "top1": 0.631578947368421
+  },
+  "raw_fidelity": {
+   "circuits": 19,
+   "mean_regret": 0.06281983892413018,
+   "top1": 0.10526315789473684
+  }
+ }
+}

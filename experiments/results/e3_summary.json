@@ -1,0 +1,336 @@
+{
+  "jobs": 28,
+  "candidates_per_job": 8,
+  "by_tau": {
+    "0.5": {
+      "raw_best": {
+        "sla_violations": 2,
+        "unschedulable": 0,
+        "false_unschedulable": 0,
+        "mean_success": 0.7966,
+        "mean_effective_cost": 66.8581,
+        "median_latency_ms": 0.0
+      },
+      "lowest_cost": {
+        "sla_violations": 3,
+        "unschedulable": 0,
+        "false_unschedulable": 0,
+        "mean_success": 0.7459,
+        "mean_effective_cost": 2.028,
+        "median_latency_ms": 0.0
+      },
+      "estimate_filter": {
+        "sla_violations": 1,
+        "unschedulable": 4,
+        "false_unschedulable": 3,
+        "mean_success": 0.8527,
+        "mean_effective_cost": 32.5222,
+        "median_latency_ms": 6.1495
+      },
+      "perqubit_filter": {
+        "sla_violations": 1,
+        "unschedulable": 3,
+        "false_unschedulable": 2,
+        "mean_success": 0.8385,
+        "mean_effective_cost": 12.6114,
+        "median_latency_ms": 6.1495
+      },
+      "calibrated_filter": {
+        "sla_violations": 1,
+        "unschedulable": 2,
+        "false_unschedulable": 2,
+        "mean_success": 0.8201,
+        "mean_effective_cost": 21.0925,
+        "median_latency_ms": 6.1495
+      },
+      "learned_filter": {
+        "sla_violations": 1,
+        "unschedulable": 2,
+        "false_unschedulable": 1,
+        "mean_success": 0.8315,
+        "mean_effective_cost": 35.4801,
+        "median_latency_ms": 6.1495
+      },
+      "transpile_all": {
+        "sla_violations": 1,
+        "unschedulable": 2,
+        "false_unschedulable": 1,
+        "mean_success": 0.8344,
+        "mean_effective_cost": 53.0121,
+        "median_latency_ms": 161.4005
+      },
+      "oracle": {
+        "sla_violations": 0,
+        "unschedulable": 1,
+        "false_unschedulable": 0,
+        "mean_success": 0.8367,
+        "mean_effective_cost": 30.4657,
+        "median_latency_ms": 0.0
+      }
+    },
+    "0.6": {
+      "raw_best": {
+        "sla_violations": 4,
+        "unschedulable": 0,
+        "false_unschedulable": 0,
+        "mean_success": 0.7966,
+        "mean_effective_cost": 66.8581,
+        "median_latency_ms": 0.0
+      },
+      "lowest_cost": {
+        "sla_violations": 6,
+        "unschedulable": 0,
+        "false_unschedulable": 0,
+        "mean_success": 0.7459,
+        "mean_effective_cost": 2.028,
+        "median_latency_ms": 0.0
+      },
+      "estimate_filter": {
+        "sla_violations": 0,
+        "unschedulable": 6,
+        "false_unschedulable": 2,
+        "mean_success": 0.8757,
+        "mean_effective_cost": 24.0044,
+        "median_latency_ms": 6.1495
+      },
+      "perqubit_filter": {
+        "sla_violations": 1,
+        "unschedulable": 5,
+        "false_unschedulable": 1,
+        "mean_success": 0.8652,
+        "mean_effective_cost": 5.5445,
+        "median_latency_ms": 6.1495
+      },
+      "calibrated_filter": {
+        "sla_violations": 1,
+        "unschedulable": 5,
+        "false_unschedulable": 2,
+        "mean_success": 0.8633,
+        "mean_effective_cost": 11.0334,
+        "median_latency_ms": 6.1495
+      },
+      "learned_filter": {
+        "sla_violations": 0,
+        "unschedulable": 4,
+        "false_unschedulable": 0,
+        "mean_success": 0.8578,
+        "mean_effective_cost": 22.2337,
+        "median_latency_ms": 6.1495
+      },
+      "transpile_all": {
+        "sla_violations": 0,
+        "unschedulable": 4,
+        "false_unschedulable": 0,
+        "mean_success": 0.8589,
+        "mean_effective_cost": 45.3845,
+        "median_latency_ms": 161.4005
+      },
+      "oracle": {
+        "sla_violations": 0,
+        "unschedulable": 4,
+        "false_unschedulable": 0,
+        "mean_success": 0.8729,
+        "mean_effective_cost": 21.4165,
+        "median_latency_ms": 0.0
+      }
+    },
+    "0.7": {
+      "raw_best": {
+        "sla_violations": 7,
+        "unschedulable": 0,
+        "false_unschedulable": 0,
+        "mean_success": 0.7966,
+        "mean_effective_cost": 66.8581,
+        "median_latency_ms": 0.0
+      },
+      "lowest_cost": {
+        "sla_violations": 8,
+        "unschedulable": 0,
+        "false_unschedulable": 0,
+        "mean_success": 0.7459,
+        "mean_effective_cost": 2.028,
+        "median_latency_ms": 0.0
+      },
+      "estimate_filter": {
+        "sla_violations": 0,
+        "unschedulable": 11,
+        "false_unschedulable": 6,
+        "mean_success": 0.9071,
+        "mean_effective_cost": 17.367,
+        "median_latency_ms": 6.1495
+      },
+      "perqubit_filter": {
+        "sla_violations": 0,
+        "unschedulable": 7,
+        "false_unschedulable": 2,
+        "mean_success": 0.8824,
+        "mean_effective_cost": 5.879,
+        "median_latency_ms": 6.1495
+      },
+      "calibrated_filter": {
+        "sla_violations": 0,
+        "unschedulable": 11,
+        "false_unschedulable": 6,
+        "mean_success": 0.9078,
+        "mean_effective_cost": 9.2309,
+        "median_latency_ms": 6.1495
+      },
+      "learned_filter": {
+        "sla_violations": 2,
+        "unschedulable": 5,
+        "false_unschedulable": 1,
+        "mean_success": 0.8648,
+        "mean_effective_cost": 20.2993,
+        "median_latency_ms": 6.1495
+      },
+      "transpile_all": {
+        "sla_violations": 0,
+        "unschedulable": 6,
+        "false_unschedulable": 1,
+        "mean_success": 0.8762,
+        "mean_effective_cost": 38.4568,
+        "median_latency_ms": 161.4005
+      },
+      "oracle": {
+        "sla_violations": 0,
+        "unschedulable": 5,
+        "false_unschedulable": 0,
+        "mean_success": 0.8825,
+        "mean_effective_cost": 16.2989,
+        "median_latency_ms": 0.0
+      }
+    },
+    "0.8": {
+      "raw_best": {
+        "sla_violations": 10,
+        "unschedulable": 0,
+        "false_unschedulable": 0,
+        "mean_success": 0.7966,
+        "mean_effective_cost": 66.8581,
+        "median_latency_ms": 0.0
+      },
+      "lowest_cost": {
+        "sla_violations": 12,
+        "unschedulable": 0,
+        "false_unschedulable": 0,
+        "mean_success": 0.7459,
+        "mean_effective_cost": 2.028,
+        "median_latency_ms": 0.0
+      },
+      "estimate_filter": {
+        "sla_violations": 0,
+        "unschedulable": 15,
+        "false_unschedulable": 5,
+        "mean_success": 0.9248,
+        "mean_effective_cost": 18.149,
+        "median_latency_ms": 6.1495
+      },
+      "perqubit_filter": {
+        "sla_violations": 1,
+        "unschedulable": 11,
+        "false_unschedulable": 1,
+        "mean_success": 0.9084,
+        "mean_effective_cost": 6.7839,
+        "median_latency_ms": 6.1495
+      },
+      "calibrated_filter": {
+        "sla_violations": 0,
+        "unschedulable": 18,
+        "false_unschedulable": 8,
+        "mean_success": 0.9272,
+        "mean_effective_cost": 11.776,
+        "median_latency_ms": 6.1495
+      },
+      "learned_filter": {
+        "sla_violations": 2,
+        "unschedulable": 10,
+        "false_unschedulable": 2,
+        "mean_success": 0.8962,
+        "mean_effective_cost": 13.055,
+        "median_latency_ms": 6.1495
+      },
+      "transpile_all": {
+        "sla_violations": 0,
+        "unschedulable": 10,
+        "false_unschedulable": 0,
+        "mean_success": 0.9031,
+        "mean_effective_cost": 29.2836,
+        "median_latency_ms": 161.4005
+      },
+      "oracle": {
+        "sla_violations": 0,
+        "unschedulable": 10,
+        "false_unschedulable": 0,
+        "mean_success": 0.9168,
+        "mean_effective_cost": 13.0607,
+        "median_latency_ms": 0.0
+      }
+    },
+    "0.9": {
+      "raw_best": {
+        "sla_violations": 19,
+        "unschedulable": 0,
+        "false_unschedulable": 0,
+        "mean_success": 0.7966,
+        "mean_effective_cost": 66.8581,
+        "median_latency_ms": 0.0
+      },
+      "lowest_cost": {
+        "sla_violations": 21,
+        "unschedulable": 0,
+        "false_unschedulable": 0,
+        "mean_success": 0.7459,
+        "mean_effective_cost": 2.028,
+        "median_latency_ms": 0.0
+      },
+      "estimate_filter": {
+        "sla_violations": 0,
+        "unschedulable": 23,
+        "false_unschedulable": 7,
+        "mean_success": 0.9443,
+        "mean_effective_cost": 13.5025,
+        "median_latency_ms": 6.1495
+      },
+      "perqubit_filter": {
+        "sla_violations": 1,
+        "unschedulable": 19,
+        "false_unschedulable": 3,
+        "mean_success": 0.9283,
+        "mean_effective_cost": 9.266,
+        "median_latency_ms": 6.1495
+      },
+      "calibrated_filter": {
+        "sla_violations": 0,
+        "unschedulable": 28,
+        "false_unschedulable": 12,
+        "mean_success": NaN,
+        "mean_effective_cost": NaN,
+        "median_latency_ms": 6.1495
+      },
+      "learned_filter": {
+        "sla_violations": 0,
+        "unschedulable": 18,
+        "false_unschedulable": 2,
+        "mean_success": 0.9332,
+        "mean_effective_cost": 7.299,
+        "median_latency_ms": 6.1495
+      },
+      "transpile_all": {
+        "sla_violations": 0,
+        "unschedulable": 20,
+        "false_unschedulable": 4,
+        "mean_success": 0.9418,
+        "mean_effective_cost": 14.6483,
+        "median_latency_ms": 161.4005
+      },
+      "oracle": {
+        "sla_violations": 0,
+        "unschedulable": 16,
+        "false_unschedulable": 0,
+        "mean_success": 0.9432,
+        "mean_effective_cost": 8.101,
+        "median_latency_ms": 0.0
+      }
+    }
+  }
+}

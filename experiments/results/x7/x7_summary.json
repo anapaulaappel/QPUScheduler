@@ -1,0 +1,118 @@
+{
+ "notes": {
+  "iqm_garnet": "IQM Resonance calibration quality metrics, 3 Nov 2026",
+  "rigetti_cepheus": "Rigetti published medians at GA (Apr 2026): 1Q 99.9%, CZ 99.1%; readout not published, assumed 3%. Job calibration was not available through Open Quantum. | bit order as_is (as_is 1.31, reversed 0.21)"
+ },
+ "n_rows": 124,
+ "per_device": {
+  "ibm_fez": {
+   "esp_estimated": {
+    "rho": 0.822,
+    "mae": 0.132
+   },
+   "esp_actual": {
+    "rho": 0.869,
+    "mae": 0.121
+   },
+   "n": 28
+  },
+  "ibm_kingston": {
+   "esp_estimated": {
+    "rho": 0.91,
+    "mae": 0.099
+   },
+   "esp_actual": {
+    "rho": 0.947,
+    "mae": 0.114
+   },
+   "n": 28
+  },
+  "ibm_marrakesh": {
+   "esp_estimated": {
+    "rho": 0.831,
+    "mae": 0.139
+   },
+   "esp_actual": {
+    "rho": 0.88,
+    "mae": 0.129
+   },
+   "n": 28
+  },
+  "iqm_garnet": {
+   "esp_estimated": {
+    "rho": 0.901,
+    "mae": 0.102
+   },
+   "esp_actual": {
+    "rho": 0.958,
+    "mae": 0.083
+   },
+   "n": 28
+  },
+  "rigetti_cepheus": {
+   "esp_estimated": {
+    "rho": 0.567,
+    "mae": 0.324
+   },
+   "esp_actual": {
+    "rho": 0.592,
+    "mae": 0.308
+   },
+   "n": 12
+  }
+ },
+ "selection": {
+  "ibm3+iqm (all circuits run on IQM)/n_circuits": 28,
+  "ibm3+iqm (all circuits run on IQM)/esp_estimated": {
+   "regret": 0.0052,
+   "regret_ci": [
+    0.0004,
+    0.0123
+   ],
+   "top1": 0.821,
+   "top1_ci": [
+    0.679,
+    0.964
+   ]
+  },
+  "ibm3+iqm (all circuits run on IQM)/esp_actual": {
+   "regret": 0.0246,
+   "regret_ci": [
+    0.0054,
+    0.0488
+   ],
+   "top1": 0.714,
+   "top1_ci": [
+    0.536,
+    0.857
+   ]
+  },
+  "ibm3+iqm (all circuits run on IQM)/best_single_device": "ibm_kingston",
+  "ibm3+iqm+rigetti (12 circuits)/n_circuits": 12,
+  "ibm3+iqm+rigetti (12 circuits)/esp_estimated": {
+   "regret": 0.0068,
+   "regret_ci": [
+    0.0,
+    0.0203
+   ],
+   "top1": 0.833,
+   "top1_ci": [
+    0.583,
+    1.0
+   ]
+  },
+  "ibm3+iqm+rigetti (12 circuits)/esp_actual": {
+   "regret": 0.0316,
+   "regret_ci": [
+    0.0002,
+    0.0713
+   ],
+   "top1": 0.667,
+   "top1_ci": [
+    0.417,
+    0.917
+   ]
+  },
+  "ibm3+iqm+rigetti (12 circuits)/best_single_device": "ibm_kingston"
+ }
+}

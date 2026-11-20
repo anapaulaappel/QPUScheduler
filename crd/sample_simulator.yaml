@@ -1,0 +1,36 @@
+---
+# Sample QuantumProcessor for Qiskit Aer simulator (development/testing)
+apiVersion: quantum.openshift.io/v1alpha1
+kind: QuantumProcessor
+metadata:
+  name: aer-simulator-statevector
+  namespace: quantum-system
+  labels:
+    quantum.openshift.io/provider: "simulator"
+    quantum.openshift.io/backend: "aer_simulator_statevector"
+spec:
+  provider: simulator
+  backendName: aer_simulator_statevector
+  qubitCount: 32
+  topology: all-to-all
+  isSimulator: true
+  pollingIntervalSeconds: 60
+---
+# Sample QuantumProcessor for IBM Quantum (real hardware — populated by probe)
+apiVersion: quantum.openshift.io/v1alpha1
+kind: QuantumProcessor
+metadata:
+  name: ibm-quantum-placeholder
+  namespace: quantum-system
+  labels:
+    quantum.openshift.io/provider: "ibm-quantum"
+spec:
+  provider: ibm-quantum
+  backendName: ibm_brisbane
+  qubitCount: 127
+  topology: heavy-hex
+  isSimulator: false
+  pollingIntervalSeconds: 300
+  secretRef:
+    name: ibm-quantum-credentials
+    key: api-token

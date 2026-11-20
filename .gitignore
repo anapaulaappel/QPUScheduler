@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.pytest_cache/
+
+# Real calibration history grows continuously (collector output)
+data/real_history/
+.venv-*/
+
+# Regenerable or noisy artifacts (kept locally, not published)
+*.pkl
+*.bak
+experiments/*.log
+experiments/results/**/*.log
+experiments/results/e6_2devices_backup/

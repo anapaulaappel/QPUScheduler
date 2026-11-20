@@ -1,0 +1,38 @@
+{
+  "shots": 2000,
+  "usage_seconds": {
+    "ibm_fez": 58,
+    "ibm_marrakesh": 60,
+    "ibm_kingston": 59
+  },
+  "n": 306,
+  "backends": [
+    "ibm_fez",
+    "ibm_kingston",
+    "ibm_marrakesh"
+  ],
+  "simulated": {
+    "spearman_vs_measured": 0.9738032778827161,
+    "mae_vs_measured": 0.1774264705882353,
+    "mean_regret": 0.011284313725490196,
+    "top1_accuracy": 0.7843137254901961
+  },
+  "raw_fidelity": {
+    "spearman_vs_measured": 0.030223553016913058,
+    "mae_vs_measured": null,
+    "mean_regret": 0.07778921568627452,
+    "top1_accuracy": 0.0784313725490196
+  },
+  "esp_estimated": {
+    "spearman_vs_measured": 0.950999465012214,
+    "mae_vs_measured": 0.09586398143447163,
+    "mean_regret": 0.002705882352941176,
+    "top1_accuracy": 0.8431372549019608
+  },
+  "esp_actual": {
+    "spearman_vs_measured": 0.96014053415033,
+    "mae_vs_measured": 0.09708331056139216,
+    "mean_regret": 0.002705882352941176,
+    "top1_accuracy": 0.8431372549019608
+  }
+}

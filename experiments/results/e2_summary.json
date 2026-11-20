@@ -1,0 +1,44 @@
+{
+  "success_probability": {
+    "raw_fidelity": {
+      "spearman": 0.44801106263706886,
+      "top1_target_accuracy": 0.03571428571428571,
+      "mean_regret": 0.02110714285714285
+    },
+    "esp_logical": {
+      "spearman": 0.9060415654707662,
+      "top1_target_accuracy": 0.39285714285714285,
+      "mean_regret": 0.02810714285714285
+    },
+    "esp_estimated": {
+      "spearman": 0.9030322604883135,
+      "top1_target_accuracy": 0.42857142857142855,
+      "mean_regret": 0.012910714285714284
+    },
+    "esp_dynamic": {
+      "spearman": 0.9064745167464037,
+      "top1_target_accuracy": 0.2857142857142857,
+      "mean_regret": 0.03126785714285714
+    },
+    "esp_per_qubit": {
+      "spearman": 0.7474094318903693,
+      "top1_target_accuracy": 0.2857142857142857,
+      "mean_regret": 0.030053571428571426
+    },
+    "esp_actual": {
+      "spearman": 0.914102680467224,
+      "top1_target_accuracy": 0.4642857142857143,
+      "mean_regret": 0.012892857142857147
+    },
+    "learned": {
+      "spearman": 0.9266550643686624,
+      "top1_target_accuracy": 0.32142857142857145,
+      "mean_regret": 0.013839285714285717,
+      "mae": 0.067196174867563,
+      "r2": 0.8819999236966576
+    }
+  },
+  "e1_alpha_static": 0.2801615952736357,
+  "e1_alpha_dynamic": 0.29214965114048286,
+  "n_samples": 224
+}

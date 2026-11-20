@@ -1,0 +1,104 @@
+{
+  "error_sources": {
+    "iqm_garnet": "IQM Resonance calibration quality metrics, 3 Nov 2026",
+    "rigetti_cepheus": "Rigetti published medians at GA (Apr 2026): 1Q 99.9%, CZ 99.1%; readout not published, assumed 3%. Job calibration was not available through Open Quantum. | verbatim submission | bit order as_is (sum over 11 circuits: as_is 1.59, reversed 0.22)",
+    "aqt_ibex_q1": "AQT published IBEX Q1 figures (1Q 99.97%, 2Q 98.85%); readout assumed 0.5% | verbatim submission | bit order as_is (sum over 5 circuits: as_is 2.33, reversed 0.03)"
+  },
+  "excluded": {
+    "rigetti_cepheus": "provider compiler simplified the mirror circuits (C\u00b7C\u2020 cancelled across the barrier)"
+  },
+  "per_device": {
+    "aqt_ibex_q1": {
+      "n": 6,
+      "esp_estimated": {
+        "spearman": 0.942857142857143,
+        "mae": 0.2148808596311896
+      },
+      "esp_actual": {
+        "spearman": 0.942857142857143,
+        "mae": 0.21992995612175983
+      },
+      "mean_measured": 0.3983333333333334,
+      "mean_est_swaps": 0.0,
+      "est_vs_actual_n2_spearman": 1.0
+    },
+    "iqm_garnet": {
+      "n": 28,
+      "esp_estimated": {
+        "spearman": 0.9265088358284819,
+        "mae": 0.09181458675298124
+      },
+      "esp_actual": {
+        "spearman": 0.9812508645332665,
+        "mae": 0.09566955027083893
+      },
+      "mean_measured": 0.3793571428571429,
+      "mean_est_swaps": 41.214285714285715,
+      "est_vs_actual_n2_spearman": 0.9967096618173528
+    },
+    "rigetti_cepheus": {
+      "n": 12,
+      "esp_estimated": {
+        "spearman": 0.9020979020979022,
+        "mae": 0.2954069304324432
+      },
+      "esp_actual": {
+        "spearman": 0.9440559440559443,
+        "mae": 0.27973864827002687
+      },
+      "mean_measured": 0.19483333333333333,
+      "mean_est_swaps": 21.5,
+      "est_vs_actual_n2_spearman": 0.9930069930069931
+    }
+  },
+  "pooled_non_ibm": {
+    "n": 46,
+    "esp_estimated": {
+      "spearman": 0.8600505832414695,
+      "mae": 0.16097775547956372
+    },
+    "esp_actual": {
+      "spearman": 0.9399247588939154,
+      "mae": 0.15989545485987766
+    }
+  },
+  "cross_vendor": {
+    "devices": [
+      "aqt_ibex_q1",
+      "ibm_fez",
+      "ibm_kingston",
+      "ibm_marrakesh",
+      "iqm_garnet",
+      "rigetti_cepheus"
+    ],
+    "pooled": {
+      "n": 130,
+      "esp_estimated": {
+        "spearman": 0.8492700226939776,
+        "mae": 0.12926705901593225
+      },
+      "esp_actual": {
+        "spearman": 0.8400987050472388,
+        "mae": 0.13487424274839335
+      }
+    },
+    "selection_esp_estimated": {
+      "circuits": 28,
+      "mean_regret": 0.05078571428571428,
+      "top1": 0.75
+    },
+    "selection_esp_actual": {
+      "circuits": 28,
+      "mean_regret": 0.09582142857142857,
+      "top1": 0.5714285714285714
+    },
+    "always_device_regret": {
+      "iqm_garnet": 0.2118214285714286,
+      "rigetti_cepheus": 0.476,
+      "aqt_ibex_q1": 0.26575,
+      "ibm_fez": 0.07949107142857144,
+      "ibm_marrakesh": 0.10301785714285715,
+      "ibm_kingston": 0.009571428571428568
+    }
+  }
+}

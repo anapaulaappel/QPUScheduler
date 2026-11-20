@@ -1,0 +1,31 @@
+# QPUScheduler — unified requirements (Python >= 3.11)
+#
+# Core (scheduler, forecaster, probe in simulator mode)
+numpy>=1.26.0
+pandas>=2.0.0
+scikit-learn>=1.4.0
+pyyaml>=6.0
+
+# Demo notebook
+matplotlib>=3.8
+seaborn>=0.13
+jupyter
+nbconvert>=7.0
+
+# Tests
+pytest>=8.0
+
+# IBM Quantum (only needed for PROBE_MODE=real)
+qiskit>=1.0.0
+qiskit-ibm-runtime>=0.20.0
+qiskit-aer>=0.14.0
+
+# Statistical forecaster
+prophet>=1.1.5   # forecaster model="prophet" (tested with 1.5)
+
+# Retranspilation broker: tket toolchain for trapped-ion targets (optional)
+pytket>=2.0
+pytket-qiskit>=0.70
+
+# Experiments
+scipy>=1.11

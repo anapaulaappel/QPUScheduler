@@ -1,0 +1,121 @@
+{
+ "bernstein_vazirani_4": {
+  "credits": 3.0,
+  "shots": 200,
+  "n2": 0,
+  "n1": 8,
+  "depth": 3
+ },
+ "ghz_4": {
+  "credits": 3.0,
+  "shots": 200,
+  "n2": 3,
+  "n1": 12,
+  "depth": 11
+ },
+ "bernstein_vazirani_6": {
+  "credits": 3.0,
+  "shots": 200,
+  "n2": 3,
+  "n1": 15,
+  "depth": 9
+ },
+ "ghz_6": {
+  "credits": 3.0,
+  "shots": 200,
+  "n2": 5,
+  "n1": 20,
+  "depth": 17
+ },
+ "bernstein_vazirani_8": {
+  "credits": 3.0,
+  "shots": 200,
+  "n2": 3,
+  "n1": 19,
+  "depth": 9
+ },
+ "ghz_8": {
+  "credits": 3.0,
+  "shots": 200,
+  "n2": 7,
+  "n1": 28,
+  "depth": 23
+ },
+ "grover_3": {
+  "credits": 3.0,
+  "shots": 200,
+  "n2": 24,
+  "n1": 84,
+  "depth": 71
+ },
+ "grover_4": {
+  "credits": 3.0,
+  "shots": 200,
+  "n2": 84,
+  "n1": 278,
+  "depth": 255
+ },
+ "adder_6": {
+  "credits": 3.0,
+  "shots": 200,
+  "n2": 33,
+  "n1": 108,
+  "depth": 82
+ },
+ "adder_8": {
+  "credits": 3.0,
+  "shots": 200,
+  "n2": 49,
+  "n1": 160,
+  "depth": 119
+ },
+ "qaoa_ring_4": {
+  "credits": 3.0,
+  "shots": 200,
+  "n2": 8,
+  "n1": 35,
+  "depth": 27
+ },
+ "qaoa_ring_6": {
+  "credits": 3.0,
+  "shots": 200,
+  "n2": 12,
+  "n1": 52,
+  "depth": 39
+ },
+ "qaoa_3reg_6": {
+  "credits": 3.0,
+  "shots": 200,
+  "n2": 18,
+  "n1": 65,
+  "depth": 41
+ },
+ "qaoa_3reg_8": {
+  "credits": 3.0,
+  "shots": 200,
+  "n2": 24,
+  "n1": 84,
+  "depth": 37
+ },
+ "vqe_hea_4": {
+  "credits": 3.0,
+  "shots": 200,
+  "n2": 6,
+  "n1": 28,
+  "depth": 15
+ },
+ "vqe_hea_6": {
+  "credits": 3.0,
+  "shots": 200,
+  "n2": 10,
+  "n1": 43,
+  "depth": 19
+ },
+ "vqe_hea_8": {
+  "credits": 3.0,
+  "shots": 200,
+  "n2": 14,
+  "n1": 60,
+  "depth": 23
+ }
+}

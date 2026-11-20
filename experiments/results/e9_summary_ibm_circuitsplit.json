@@ -1,0 +1,338 @@
+{
+  "dataset": "ibm",
+  "conformal_split": "circuit",
+  "rows": 306,
+  "circuits": 102,
+  "devices": [
+    "ibm_fez",
+    "ibm_kingston",
+    "ibm_marrakesh"
+  ],
+  "alpha": 0.1,
+  "conformal": {
+    "esp_estimated": {
+      "coverage": 0.9052287581699346,
+      "margin_median": 0.1309682929575543,
+      "margin_range": [
+        0.12720968970589638,
+        0.15029534984194926
+      ]
+    },
+    "esp_actual": {
+      "coverage": 0.9019607843137255,
+      "margin_median": 0.0760718866097416,
+      "margin_range": [
+        0.06861153889217408,
+        0.0920456899728122
+      ]
+    }
+  },
+  "by_tau": {
+    "0.3": {
+      "random": {
+        "ran": 102,
+        "sla_violations": 50.67,
+        "unschedulable": 0,
+        "false_unschedulable": 0,
+        "mean_success": 0.38
+      },
+      "raw_best": {
+        "ran": 102,
+        "sla_violations": 42.0,
+        "unschedulable": 0,
+        "false_unschedulable": 0,
+        "mean_success": 0.45
+      },
+      "estimate_filter": {
+        "ran": 62,
+        "sla_violations": 6.0,
+        "unschedulable": 40,
+        "false_unschedulable": 4,
+        "mean_success": 0.687
+      },
+      "estimate_filter_conformal": {
+        "ran": 51,
+        "sla_violations": 2.0,
+        "unschedulable": 51,
+        "false_unschedulable": 11,
+        "mean_success": 0.757
+      },
+      "transpile_all": {
+        "ran": 56,
+        "sla_violations": 5.0,
+        "unschedulable": 46,
+        "false_unschedulable": 9,
+        "mean_success": 0.718
+      },
+      "transpile_all_conformal": {
+        "ran": 49,
+        "sla_violations": 2.0,
+        "unschedulable": 53,
+        "false_unschedulable": 13,
+        "mean_success": 0.778
+      },
+      "oracle": {
+        "ran": 62,
+        "sla_violations": 0.0,
+        "unschedulable": 40,
+        "false_unschedulable": 0,
+        "mean_success": 0.709
+      }
+    },
+    "0.4": {
+      "random": {
+        "ran": 102,
+        "sla_violations": 57.0,
+        "unschedulable": 0,
+        "false_unschedulable": 0,
+        "mean_success": 0.38
+      },
+      "raw_best": {
+        "ran": 102,
+        "sla_violations": 50.0,
+        "unschedulable": 0,
+        "false_unschedulable": 0,
+        "mean_success": 0.45
+      },
+      "estimate_filter": {
+        "ran": 54,
+        "sla_violations": 5.0,
+        "unschedulable": 48,
+        "false_unschedulable": 3,
+        "mean_success": 0.738
+      },
+      "estimate_filter_conformal": {
+        "ran": 44,
+        "sla_violations": 2.0,
+        "unschedulable": 58,
+        "false_unschedulable": 10,
+        "mean_success": 0.796
+      },
+      "transpile_all": {
+        "ran": 47,
+        "sla_violations": 2.0,
+        "unschedulable": 55,
+        "false_unschedulable": 7,
+        "mean_success": 0.785
+      },
+      "transpile_all_conformal": {
+        "ran": 41,
+        "sla_violations": 2.0,
+        "unschedulable": 61,
+        "false_unschedulable": 13,
+        "mean_success": 0.808
+      },
+      "oracle": {
+        "ran": 54,
+        "sla_violations": 0.0,
+        "unschedulable": 48,
+        "false_unschedulable": 0,
+        "mean_success": 0.764
+      }
+    },
+    "0.5": {
+      "random": {
+        "ran": 102,
+        "sla_violations": 61.67,
+        "unschedulable": 0,
+        "false_unschedulable": 0,
+        "mean_success": 0.38
+      },
+      "raw_best": {
+        "ran": 102,
+        "sla_violations": 53.0,
+        "unschedulable": 0,
+        "false_unschedulable": 0,
+        "mean_success": 0.45
+      },
+      "estimate_filter": {
+        "ran": 44,
+        "sla_violations": 2.0,
+        "unschedulable": 58,
+        "false_unschedulable": 7,
+        "mean_success": 0.796
+      },
+      "estimate_filter_conformal": {
+        "ran": 35,
+        "sla_violations": 2.0,
+        "unschedulable": 67,
+        "false_unschedulable": 16,
+        "mean_success": 0.817
+      },
+      "transpile_all": {
+        "ran": 41,
+        "sla_violations": 2.0,
+        "unschedulable": 61,
+        "false_unschedulable": 10,
+        "mean_success": 0.808
+      },
+      "transpile_all_conformal": {
+        "ran": 39,
+        "sla_violations": 2.0,
+        "unschedulable": 63,
+        "false_unschedulable": 12,
+        "mean_success": 0.815
+      },
+      "oracle": {
+        "ran": 50,
+        "sla_violations": 0.0,
+        "unschedulable": 52,
+        "false_unschedulable": 0,
+        "mean_success": 0.79
+      }
+    },
+    "0.6": {
+      "random": {
+        "ran": 102,
+        "sla_violations": 67.0,
+        "unschedulable": 0,
+        "false_unschedulable": 0,
+        "mean_success": 0.38
+      },
+      "raw_best": {
+        "ran": 102,
+        "sla_violations": 57.0,
+        "unschedulable": 0,
+        "false_unschedulable": 0,
+        "mean_success": 0.45
+      },
+      "estimate_filter": {
+        "ran": 39,
+        "sla_violations": 2.0,
+        "unschedulable": 63,
+        "false_unschedulable": 8,
+        "mean_success": 0.815
+      },
+      "estimate_filter_conformal": {
+        "ran": 13,
+        "sla_violations": 0.0,
+        "unschedulable": 89,
+        "false_unschedulable": 32,
+        "mean_success": 0.908
+      },
+      "transpile_all": {
+        "ran": 36,
+        "sla_violations": 1.0,
+        "unschedulable": 66,
+        "false_unschedulable": 10,
+        "mean_success": 0.837
+      },
+      "transpile_all_conformal": {
+        "ran": 25,
+        "sla_violations": 0.0,
+        "unschedulable": 77,
+        "false_unschedulable": 20,
+        "mean_success": 0.877
+      },
+      "oracle": {
+        "ran": 45,
+        "sla_violations": 0.0,
+        "unschedulable": 57,
+        "false_unschedulable": 0,
+        "mean_success": 0.818
+      }
+    },
+    "0.7": {
+      "random": {
+        "ran": 102,
+        "sla_violations": 74.0,
+        "unschedulable": 0,
+        "false_unschedulable": 0,
+        "mean_success": 0.38
+      },
+      "raw_best": {
+        "ran": 102,
+        "sla_violations": 65.0,
+        "unschedulable": 0,
+        "false_unschedulable": 0,
+        "mean_success": 0.45
+      },
+      "estimate_filter": {
+        "ran": 27,
+        "sla_violations": 1.0,
+        "unschedulable": 75,
+        "false_unschedulable": 11,
+        "mean_success": 0.874
+      },
+      "estimate_filter_conformal": {
+        "ran": 5,
+        "sla_violations": 0.0,
+        "unschedulable": 97,
+        "false_unschedulable": 32,
+        "mean_success": 0.933
+      },
+      "transpile_all": {
+        "ran": 19,
+        "sla_violations": 0.0,
+        "unschedulable": 83,
+        "false_unschedulable": 18,
+        "mean_success": 0.897
+      },
+      "transpile_all_conformal": {
+        "ran": 10,
+        "sla_violations": 0.0,
+        "unschedulable": 92,
+        "false_unschedulable": 27,
+        "mean_success": 0.924
+      },
+      "oracle": {
+        "ran": 37,
+        "sla_violations": 0.0,
+        "unschedulable": 65,
+        "false_unschedulable": 0,
+        "mean_success": 0.856
+      }
+    },
+    "0.8": {
+      "random": {
+        "ran": 102,
+        "sla_violations": 83.0,
+        "unschedulable": 0,
+        "false_unschedulable": 0,
+        "mean_success": 0.38
+      },
+      "raw_best": {
+        "ran": 102,
+        "sla_violations": 74.0,
+        "unschedulable": 0,
+        "false_unschedulable": 0,
+        "mean_success": 0.45
+      },
+      "estimate_filter": {
+        "ran": 9,
+        "sla_violations": 0.0,
+        "unschedulable": 93,
+        "false_unschedulable": 19,
+        "mean_success": 0.927
+      },
+      "estimate_filter_conformal": {
+        "ran": 0,
+        "sla_violations": 0.0,
+        "unschedulable": 102,
+        "false_unschedulable": 28,
+        "mean_success": NaN
+      },
+      "transpile_all": {
+        "ran": 8,
+        "sla_violations": 0.0,
+        "unschedulable": 94,
+        "false_unschedulable": 20,
+        "mean_success": 0.929
+      },
+      "transpile_all_conformal": {
+        "ran": 2,
+        "sla_violations": 0.0,
+        "unschedulable": 100,
+        "false_unschedulable": 26,
+        "mean_success": 0.956
+      },
+      "oracle": {
+        "ran": 28,
+        "sla_violations": 0.0,
+        "unschedulable": 74,
+        "false_unschedulable": 0,
+        "mean_success": 0.883
+      }
+    }
+  }
+}
