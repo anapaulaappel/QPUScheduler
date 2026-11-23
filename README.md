@@ -1,6 +1,8 @@
 # Transpilation-aware QPU placement: experiments
 
-Code, data and results for the paper on letting a cluster scheduler choose the QPU for a quantum job.
+Code, data and results for the paper on letting a cluster scheduler choose the QPU for a quantum job:
+**[Transpilation-Aware Multi-Vendor QPU Scheduling with Predicted Post-Transpilation Fidelity](https://arxiv.org/abs/2611.27927)**
+(arXiv:2611.27927).
 A training-free estimate predicts, without compiling, the success probability of a circuit on each
 candidate QPU and filters out the devices that would miss the job's requirement; only the chosen device
 then compiles the circuit and re-checks it before the job is bound (or rolled back).
@@ -77,6 +79,20 @@ The estimate, the placement policies, the two-stage binding with rollback and th
 implemented as a Python prototype under `scheduler/`, `probe/` and `forecaster/`, used by the
 experiments above. It is not a Kubernetes scheduler plugin or a Slurm integration. See
 [`docs/prototype.md`](docs/prototype.md) for its components and the demo notebook.
+
+## Citation
+
+```bibtex
+@misc{appel2026qsched,
+  title         = {Transpilation-Aware Multi-Vendor {QPU} Scheduling with Predicted Post-Transpilation Fidelity},
+  author        = {Appel, Ana Paula},
+  year          = {2026},
+  eprint        = {2611.27927},
+  archivePrefix = {arXiv},
+  primaryClass  = {quant-ph},
+  url           = {https://arxiv.org/abs/2611.27927}
+}
+```
 
 ## License
 
